@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+</head>
+<body>
+    
+    <div id="hasil1"></div>
+    <div id="hasil2"></div>
+    <div id="hasil3"></div>
+    <div id="hasil4"></div>
+    <div id="hasil5"></div>
+    <script>
+        /*
+            function ==> subprogram / bagian yang bisa digunakan kembali
+
+            format: 
+                function namaFunction (parameter) {
+                    ...
+                    return ...;
+                }
+
+        */
+
+        document.getElementById('hasil1').innerHTML = hitung(3, 5, '+');
+        document.getElementById('hasil2').innerHTML = hitung(7, 4, '*');;
+        document.getElementById('hasil3').innerHTML = hitung(6, 18, '-');;
+        document.getElementById('hasil4').innerHTML = hitung(100, 4, '/');;
+        document.getElementById('hasil5').innerHTML = hitung(7, 3, '%');;
+
+        function hitung (angka1, angka2, mode) {
+            if (mode == '+') {
+                return  angka1 + angka2;
+            } 
+            else if (mode == '-') {
+                return angka1 - angka2;
+            }
+            else if (mode == '*') {
+                return angka1 * angka2;
+            }
+            else if (mode == '/') {
+                return angka1 / angka2;
+            }
+            else if (mode == '%') {
+                return angka1 % angka2;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

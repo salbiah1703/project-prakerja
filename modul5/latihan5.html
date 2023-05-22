@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5</title>
+</head>
+<body>
+    <h1>Tipe Data Object</h1>
+
+    <div id="hasil"></div>
+    <div id="hasil2"></div>
+
+    <script>
+
+        /*
+            object ==> menampung berbagai jenis nilai sekaligus
+
+            properti: sifat / karakteristik 
+
+            format: 
+                let namaVariabelObject = {
+                    properti1: value1,
+                    properti2: value2,
+                    ...
+                };
+        */
+
+            let pokemon1 = {
+                nama: 'Pikachu',
+                type: 'Electric',
+                food: ['Candy', 'Cake'],
+                atk: 50,
+                def: 40,
+                hp: 80,
+                isWild: true
+            };
+
+            /*
+                menampilkan nama pokemon1
+                pokemon1.nama
+                
+                menampilkan atk
+                pokemon1.atk
+
+
+            */
+            
+            let pokemon2 = {
+                nama: 'Mewtwo',
+                type: 'Psychic',
+                food: ['Candy', 'Berry'],
+                atk: 290,
+                def: 160,
+                hp: 320,
+                isWild: false
+            };
+
+            console.log(pokemon1);
+
+            let status = null;
+            if (pokemon1.isWild === true) {
+                status = 'liar';
+            } else {
+                status = 'udah ada yang punya';
+            }
+
+            let status2 = null;
+            if (pokemon2.isWild === true) {
+                status2 = 'liar';
+            } else {
+                status2 = 'udah ada yang punya';
+            }
+
+            document.getElementById('hasil').innerHTML = 'Anda menemukan <b style="color: red;">' + pokemon1.nama + '</b> yang statusnya <i>' + status + '</i> dengan attack ' + pokemon1.atk + '<br/><br/>';
+
+            document.getElementById('hasil2').innerHTML = 'Anda menemukan <b>' + pokemon2.nama + '</b> yang statusnya <i>' + status2 + '</i> dengan attack ' + pokemon2.atk;
+
+
+    </script>
+
+</body>
+</html>

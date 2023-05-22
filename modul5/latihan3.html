@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 - Pertemuan 5</title>
+</head>
+<body>
+    <h1>Tipe Data</h1>
+
+    <div id="hasil-integer"></div>
+    <div id="hasil-float"></div>
+
+    <hr/>
+    <div id="hasil-string"></div>
+    
+    <hr/>
+    <div id="hasil-boolean-true"></div>
+    <div id="hasil-boolean-false"></div>
+
+
+
+    <script>
+        /*
+            tipe data ==> jenis data yang disimpan oleh variabel
+
+            Jenis/Macam Tipe Data:
+            - Number  : 
+                        a. Integer (bilangan bulat)     ==> 1; 50; dst.
+                        b. Decimal (floating point)     ==> 3.14; 100.25; dst.
+            - String / text                             ==> "Indonesia"; "Belajar HTML"; 'Haloo';
+            - Boolean                                   ==> true; atau false;
+            - Array / larik                             ==> [ ... ]
+            - Object                                    ==> { ... }
+        */
+
+        // number
+
+        let bilanganBulat = 56;
+        let bilanganDesimal = 88.25;
+
+        document.getElementById('hasil-integer').innerHTML = bilanganBulat;
+        document.getElementById('hasil-float').innerHTML = bilanganDesimal;
+        
+        // string
+        
+        let kalimat = "Belajar Javascript..."; // atau let kalimat = 'Belajar Javascript...';
+        document.getElementById('hasil-string').innerHTML = kalimat;
+        
+        // boolean 
+        let status = true;
+        let ketemu = false;
+        document.getElementById('hasil-boolean-true').innerHTML = status;
+        document.getElementById('hasil-boolean-false').innerHTML = ketemu;
+
+        console.log(kalimat);
+        console.log(bilanganBulat);
+        console.log(status);
+        console.log(ketemu);
+
+        console.log(typeof kalimat);
+        console.log(typeof bilanganBulat);
+        console.log(typeof status);
+
+
+    </script>
+
+</body>
+</html>

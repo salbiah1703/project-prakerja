@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6</title>
+</head>
+<body>
+
+    <h1>Operator Aritmatika</h1>
+
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="sisahasilbagi"></div>
+
+    <script>
+        /*
+            Jenis Operator:
+            - Aritmatika   ==> 
+                   1. Penjumlahan ==> +
+                   2. Pengurangan ==> -
+                   3. Perkalian ==> *
+                   4. Pembagian ==> /
+                   5. Sisa hasil bagi ==> %
+            - Perbandingan 
+                   1. Kurang dari                   ==>  <
+                   2. Kurang dari atau sama dengan  ==>   <=
+                   3. Lebih dari                    ==>  >
+                   4. Lebih dari atau sama dengan   ==>   >=
+                   5. Sama dengan                   ==>  == 
+                   6. Sama dengan dan identik       ==>  ===
+                   7. Tidak sama dengan             ==>  !==
+        */
+
+        let bilangan1 = 10;
+        let bilangan2 = 3;
+
+        let hasilPenjumlahan = bilangan1 + bilangan2;
+        let hasilPengurangan = bilangan1 - bilangan2;
+        let hasilPerkalian = bilangan1 * bilangan2;
+        let hasilPembagian = bilangan1 / bilangan2;
+        let sisaHasilBagi = bilangan1 % bilangan2;
+
+        document.getElementById('penjumlahan').innerHTML = hasilPenjumlahan;
+        document.getElementById('pengurangan').innerHTML = hasilPengurangan;
+        document.getElementById('perkalian').innerHTML = hasilPerkalian;
+        document.getElementById('pembagian').innerHTML = hasilPembagian;
+        document.getElementById('sisahasilbagi').innerHTML = sisaHasilBagi;
+
+
+    </script>
+</body>
+</html>

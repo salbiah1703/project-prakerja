@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td><input type="text" id="inputString"><br></td>
+        </tr>
+        <tr>
+            <td>Berapa Kali Guys</td>
+            <td>:</td>
+            <td><input type="number" id="inputNilai"></td>
+        </tr>
+    </table>    
+    
+    <button onclick="ulangan()">Cetak!!!</button>
+    <div id="hasilUlangan"></div>
+
+    <script>
+        function ulangan() {
+            var string = document.getElementById("inputString").value;
+            var nilai = parseInt(document.getElementById("inputNilai").value);
+            var hasil = "";
+
+            for (var i = 1; i <= nilai; i++) {
+                hasil += i + ". " + string + "<br>";            
+            }
+            document.getElementById("hasilUlangan").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 - Pertemuan 5</title>
+</head>
+<body>
+    <h1>Tipe Data Array</h1>
+
+    <div id="hasil-pemain-bola"></div>
+    <div id="hasil-nilai-mahasiswa"></div>
+
+    <script>
+        // let namaPemainBola1 = "Ramadhan Sananta";
+        // let namaPemainBola2 = "Cristiano Ronaldo";
+        // let namaPemainBola3 = "Erling Haaland";
+        // ...
+        // let namaPemainBola100 = "Erling Haaland";
+        
+        /*
+            array ==> tipe data yang digunakan untuk menampung banyak nilai sekaligus
+
+            format:
+            let namaVariabelArray = [nilai1, nilai2, ..., nilaiN];
+                         indeks ke:     0       1     ..     n
+
+        */
+
+        let namaPemainBola = ["Raul Gonzales", "Ruud Gullit", "Cafu", "Zinedine Zidane"];
+                    // indeks        0               1           2           3
+                    // Cafu         ==> namaPemainBola[2]
+                    // Zidane       ==> namaPemainBola[3]
+
+        let nilaiMahasiswa = [85, 70, 65, 100, 90, 87];
+
+        console.log(namaPemainBola);
+        console.log(nilaiMahasiswa);
+
+        // document.getElementById('hasil-pemain-bola').innerHTML = namaPemainBola[2]; // cetak Cafu
+        document.getElementById('hasil-pemain-bola').innerHTML = namaPemainBola[3]; // cetak Zidane
+
+
+
+
+    </script>
+
+</body>
+</html>

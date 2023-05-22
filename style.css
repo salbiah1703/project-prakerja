@@ -1,0 +1,15 @@
+#kotak{
+    background: violet;
+    width: 100px;
+    height: 80px;
+    margin:50 px 45 px 65 px 25px  ;
+}
+#kotak2{
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    margin-top: 3em;
+    margin-right: 4em;
+    margin-left: 3em;
+    margin-bottom: 4em;
+}

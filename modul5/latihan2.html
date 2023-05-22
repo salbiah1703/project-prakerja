@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2 - Pertemuan 5</title>
+
+    <style>
+        #nama {
+            background: red;
+            color: white;
+        }
+
+        #lokasi {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Penggunaan Variabel di JS</h1>
+
+    <div id="nama">Nama Awal</div>
+    <div id="lokasi">Lokasi Awal</div>
+    <div id="phi">Phi Awal</div>
+
+    <script>
+
+        /*
+            variabel    ==> wadah / tempat untuk menyimpan data / informasi
+
+            membuat / mendeklarasikan variabel dengan keyword (kata kunci):
+            - var   ==> nilainya berubah-ubah
+            - let   ==> nilainya berubah-ubah
+            - const ==> nilainya tetap / konstan / tidak berubah
+
+            sintaks/format deklarasi variabel: 
+            keyword(var/let/const) namaVariabel;
+            contoh: 
+            let nama = "X";
+
+        */
+
+        let nama = "Workshop 4 Days";
+        var lokasi = "Online";
+        const phi = 3.14;
+
+        // phi = 4; // ini error karena konstanta tidak boleh diubah nilainya
+
+        // mengeksekusi kode di bawahnya setelah 2000 milidetik / 2 detik
+        // setTimeout(() => {
+            document.getElementById('nama').innerHTML = nama;
+            document.getElementById('lokasi').innerHTML = lokasi;
+            document.getElementById('phi').innerHTML = phi;
+            // }, 2000);
+            
+            // let nama = "Tes"; // ini error karena let tidak boleh redeclare
+            var lokasi = "Ganti Lokasi";
+            document.getElementById('nama').innerHTML = nama;
+            document.getElementById('lokasi').innerHTML = lokasi;
+            
+            
+    </script>
+
+</body>
+</html>
